@@ -1,6 +1,6 @@
 {
   "name": "@jumpn/utils-composite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Composite utilities (immutability, fp helpers)",
   "module": "dist/index.js",
   "main": "compat/cjs/index.js",
