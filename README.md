@@ -100,8 +100,8 @@ located at the given path.
 
 ### set
 
-Returns a new composite with the result of having updated the property of the
-given key with the specified value.
+Returns a new composite with the result of having updated the property with
+the given key with the specified value.
 
 **Parameters**
 
@@ -114,7 +114,7 @@ given key with the specified value.
 Returns a new composite with the result of having updated the property
 located at the given path with the specified value.
 
-(This does the same as updateIn with updater: () => value)
+(This does the same as calling **updateIn** with updater: `() => value`)
 
 **Parameters**
 
