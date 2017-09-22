@@ -14,18 +14,15 @@ const plugins = {
 
 const dirs = {
   input: "src",
-  output: "dist"
+  output: "dist",
+  compat: "compat"
 };
-
-dirs.outputCjs = `${dirs.output}/cjs`;
-dirs.outputEs = `${dirs.output}/es`;
-dirs.outputUmd = `${dirs.output}/umd`;
 
 const getCjsAndEsConfig = fileName => ({
   input: `${dirs.input}/${fileName}`,
   output: [
-    {file: `${dirs.outputCjs}/${fileName}`, format: "cjs"},
-    {file: `${dirs.outputEs}/${fileName}`, format: "es"}
+    {file: `${dirs.output}/${fileName}`, format: "es"},
+    {file: `${dirs.compat}/cjs/${fileName}`, format: "cjs"}
   ],
   plugins: [plugins.babel]
 });
@@ -34,9 +31,9 @@ const sources = fs.readdirSync("src");
 
 export default [
   {
-    input: "src/index.js",
+    input: `${dirs.input}/index.js`,
     output: {
-      file: `${dirs.outputUmd}/index.js`,
+      file: `${dirs.compat}/umd/index.js`,
       format: "umd"
     },
     name: "UtilsArray",
