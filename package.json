@@ -1,5 +1,5 @@
 {
-  "name": "@jumpn/composite",
+  "name": "@jumpn/utils-composite",
   "version": "0.1.0",
   "description": "Composite utilities (immutability, fp helpers)",
   "module": "dist/index.js",
@@ -35,14 +35,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jumpn/composite.git"
+    "url": "git+https://github.com/jumpn/utils-composite.git"
   },
   "author": "Mauro Titimoli <mauro@jumpn.com> (https://github.com/mgtitimoli)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jumpn/composite/issues"
+    "url": "https://github.com/jumpn/utils-composite/issues"
   },
-  "homepage": "https://github.com/jumpn/composite#readme",
+  "homepage": "https://github.com/jumpn/utils-composite#readme",
   "dependencies": {
     "@jumpn/utils-array": "0.1.1",
     "babel-polyfill": "6.26.0",
