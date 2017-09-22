@@ -1,5 +1,7 @@
 // @flow
 
+import {isLastIndex} from "@jumpn/utils-array";
+
 import get from "./get";
 import hasKey from "./hasKey";
 import remove from "./remove";
@@ -20,7 +22,10 @@ const copyOrCreate = (key, nextKey, current) =>
     ? shallowCopy(get(key, current))
     : createSupporting(nextKey);
 
-const isLastIndex = (index, array) => index === array.length - 1;
+const getNext = (path, updater, index, current) =>
+  isLastIndex(path, index)
+    ? updater(get(path[index], current))
+    : copyOrCreate(path[index], path[index + 1], current);
 
 const set = (key: Key, value: mixed, composite: Composite) => {
   // eslint-disable-next-line no-param-reassign
@@ -28,11 +33,6 @@ const set = (key: Key, value: mixed, composite: Composite) => {
 
   return get(key, composite);
 };
-
-const getNext = (path, updater, index, current) =>
-  isLastIndex(index, path)
-    ? updater(get(path[index], current))
-    : copyOrCreate(path[index], path[index + 1], current);
 
 const updateRemove = (path, index, context) => {
   const removed = remove(path[index], context.current);
