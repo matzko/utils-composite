@@ -44,6 +44,7 @@
   },
   "homepage": "https://github.com/jumpn/composite#readme",
   "dependencies": {
+    "@jumpn/utils-array": "0.1.1",
     "babel-polyfill": "6.26.0",
     "babel-runtime": "6.26.0",
     "flow-static-land": "0.2.7"
