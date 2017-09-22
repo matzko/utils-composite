@@ -1,4 +1,4 @@
-# @jumpn/composite
+# @jumpn/utils-composite
 
 > Composite utilities (immutability, fp helpers)
 
