@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import get from "./get";
 import getKeys from "./getKeys";
 import hasKey from "./hasKey";
@@ -18,4 +20,4 @@ const haveSameProps = (c1: Composite, c2: Composite) => {
   );
 };
 
-export default haveSameProps;
+export default curry(haveSameProps);

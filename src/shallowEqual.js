@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import haveSameProps from "./haveSameProps";
 
 import type {Composite} from "./types";
@@ -15,4 +17,4 @@ const shallowEqual = (c1: Composite, c2: Composite) =>
   c1 === c2 ||
   (!xor(Array.isArray(c1), Array.isArray(c2)) && haveSameProps(c1, c2));
 
-export default shallowEqual;
+export default curry(shallowEqual);

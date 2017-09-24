@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import type {Composite, Key} from "./types";
 
 /**
@@ -9,4 +11,4 @@ import type {Composite, Key} from "./types";
 const hasKey = (key: Key, composite: Composite) =>
   Object.prototype.hasOwnProperty.call(composite, key);
 
-export default hasKey;
+export default curry(hasKey);

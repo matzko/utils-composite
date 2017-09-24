@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import shallowCopy from "./shallowCopy";
 
 import type {Composite, Key} from "./types";
@@ -16,4 +18,4 @@ const set = (key: Key, value: mixed, composite: Composite) => {
   return copy;
 };
 
-export default set;
+export default curry(set);

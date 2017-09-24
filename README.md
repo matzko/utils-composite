@@ -1,6 +1,8 @@
 # @jumpn/utils-composite
 
 > Composite utilities (immutability, fp helpers)
+>
+> **NOTE**: All functions the functions described in [API](#API) are curried
 
 ## Types
 
@@ -145,7 +147,7 @@ their properties are strictly equal.
 Returns a new composite with the result of having updated the property value
 at the given path with the result of the call to updater function.
 
-Entry removal is supported by returning updateIn.remove symbol on updater
+Entry removal is supported by returning `updateIn.remove` symbol on updater
 function.
 
 **Parameters**

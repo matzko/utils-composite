@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import type {Key, Composite} from "./types";
 
 /**
@@ -7,4 +9,4 @@ import type {Key, Composite} from "./types";
  */
 const get = (key: Key, composite: Composite) => composite[(key: any)];
 
-export default get;
+export default curry(get);

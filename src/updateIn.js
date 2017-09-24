@@ -1,5 +1,6 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
 import {isLastIndex} from "@jumpn/utils-array";
 
 import get from "./get";
@@ -69,7 +70,7 @@ const getResult = (path, context) =>
  * Returns a new composite with the result of having updated the property value
  * at the given path with the result of the call to updater function.
  * 
- * Entry removal is supported by returning updateIn.remove symbol on updater
+ * Entry removal is supported by returning `updateIn.remove` symbol on updater
  * function.
  */
 const updateIn = (
@@ -84,6 +85,10 @@ const updateIn = (
         path.reduce(getReducer(path, updater), createReduceContext(composite))
       );
 
-updateIn.remove = removeAction;
+// we are doing this way and not returning an Object.assign construction, as
+// that is not well typed (returns any)
+const updateInCurried = curry(updateIn);
 
-export default updateIn;
+updateInCurried.remove = removeAction;
+
+export default updateInCurried;

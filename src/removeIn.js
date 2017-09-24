@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import updateIn from "./updateIn";
 
 import type {Composite, Path} from "./types";
@@ -16,4 +18,4 @@ const remove = () => updateIn.remove;
 const removeIn = (path: Path, composite: Composite) =>
   updateIn(path, remove, composite);
 
-export default removeIn;
+export default curry(removeIn);

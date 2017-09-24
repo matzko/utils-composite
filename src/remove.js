@@ -1,6 +1,7 @@
 // @flow
 
 import arrayRemove from "@jumpn/utils-array/dist/remove";
+import {curry} from "flow-static-land/lib/Fun";
 
 import type {Composite, Key} from "./types";
 
@@ -16,4 +17,4 @@ const remove = (key: Key, composite: Composite) =>
     ? arrayRemove((key: any), 1, composite)
     : objectRemove(key, composite);
 
-export default remove;
+export default curry(remove);

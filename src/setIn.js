@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import updateIn from "./updateIn";
 
 import type {Composite, Path} from "./types";
@@ -13,4 +15,4 @@ import type {Composite, Path} from "./types";
 const setIn = (path: Path, value: mixed, composite: Composite) =>
   updateIn(path, () => value, composite);
 
-export default setIn;
+export default curry(setIn);

@@ -1,5 +1,7 @@
 // @flow
 
+import {curry} from "flow-static-land/lib/Fun";
+
 import getIn from "./getIn";
 
 import type {Composite, Path} from "./types";
@@ -11,4 +13,4 @@ import type {Composite, Path} from "./types";
 const hasIn = (path: Path, value: mixed, composite: Composite) =>
   getIn(path, composite) === value;
 
-export default hasIn;
+export default curry(hasIn);
