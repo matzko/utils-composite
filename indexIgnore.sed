@@ -1,1 +1,1 @@
-/export.*types\.js";/d
+/.*types\.js.*/d
