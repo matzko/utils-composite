@@ -97,7 +97,6 @@ located at the given path.
 **Parameters**
 
 -   `path` **Path** 
--   `value` **any** 
 -   `composite` **Composite** 
 
 ### set
