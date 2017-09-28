@@ -2,7 +2,7 @@
 
 > Composite utilities (immutability, fp helpers)
 >
-> **NOTE**: All functions the functions described in [API](#API) are curried
+> **NOTE**: All the functions described in [API](#API) are curried
 
 ## Types
 
