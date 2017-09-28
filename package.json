@@ -19,7 +19,7 @@
     "commit": "git-cz",
     "commitmsg": "commitlint -e",
     "version": "yarn build:index && yarn build:readme && git add README.md src/index.js",
-    "prepublishOnly": "yarn build:clean && build:src && yarn build:flow"
+    "prepublishOnly": "yarn build:clean && yarn build:src && yarn build:flow"
   },
   "config": {
     "commitizen": {
