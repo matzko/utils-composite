@@ -1,7 +1,7 @@
 // @flow
 
-import arrayRemove from "@jumpn/utils-array/dist/remove";
 import {curry} from "flow-static-land/lib/Fun";
+import {remove as arrayRemove} from "@jumpn/utils-array";
 
 import type {Composite, Key} from "./types";
 
