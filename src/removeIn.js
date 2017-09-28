@@ -15,7 +15,7 @@ const remove = () => updateIn.remove;
  * (This does the same as calling **updateIn** with updater:
  * `() => updateIn.remove`)
  */
-const removeIn = (path: Path, composite: Composite) =>
+const removeIn = (path: Path, composite: Composite): Composite =>
   updateIn(path, remove, composite);
 
 export default curry(removeIn);

@@ -12,7 +12,7 @@ import type {Composite, Path} from "./types";
  * 
  * (This does the same as calling **updateIn** with updater: `() => value`)
  */
-const setIn = (path: Path, value: mixed, composite: Composite) =>
+const setIn = (path: Path, value: mixed, composite: Composite): Composite =>
   updateIn(path, () => value, composite);
 
 export default curry(setIn);

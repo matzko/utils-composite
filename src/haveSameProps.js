@@ -11,7 +11,7 @@ import type {Composite} from "./types";
 /**
  * Returns true if both composites have the same props or false otherwise.
  */
-const haveSameProps = (c1: Composite, c2: Composite) => {
+const haveSameProps = (c1: Composite, c2: Composite): boolean => {
   const keys1 = getKeys(c1);
 
   return (

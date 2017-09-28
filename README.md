@@ -27,6 +27,8 @@ Get property value of given key.
 -   `key` **Key** 
 -   `composite` **Composite** 
 
+Returns **any** 
+
 ### getIn
 
 Returns value located at the given path or undefined otherwise.
@@ -35,6 +37,8 @@ Returns value located at the given path or undefined otherwise.
 
 -   `path` **Path** 
 -   `composite` **Composite** 
+
+Returns **any** 
 
 ### getKeys
 
@@ -57,6 +61,8 @@ specified.
 -   `value` **any** 
 -   `composite` **Composite** 
 
+Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
 ### hasKey
 
 Returns true if key is included in composite's own enumerable ones,
@@ -67,6 +73,8 @@ or false otherwise.
 -   `key` **Key** 
 -   `composite` **Composite** 
 
+Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
 ### haveSameProps
 
 Returns true if both composites have the same props or false otherwise.
@@ -75,6 +83,8 @@ Returns true if both composites have the same props or false otherwise.
 
 -   `c1` **Composite** 
 -   `c2` **Composite** 
+
+Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ### remove
 
@@ -85,6 +95,8 @@ the given key.
 
 -   `key` **Key** 
 -   `composite` **Composite** 
+
+Returns **Composite** 
 
 ### removeIn
 
@@ -99,6 +111,8 @@ located at the given path.
 -   `path` **Path** 
 -   `composite` **Composite** 
 
+Returns **Composite** 
+
 ### set
 
 Returns a new composite with the result of having updated the property with
@@ -109,6 +123,8 @@ the given key with the specified value.
 -   `key` **Key** 
 -   `value` **any** 
 -   `composite` **Composite** 
+
+Returns **Composite** 
 
 ### setIn
 
@@ -123,13 +139,17 @@ located at the given path with the specified value.
 -   `value` **any** 
 -   `composite` **Composite** 
 
+Returns **Composite** 
+
 ### shallowCopy
 
 Returns a new composite with the same own enumerable props of the one given.
 
 **Parameters**
 
--   `composite` **Composite** 
+-   `composite` **C** 
+
+Returns **C** 
 
 ### shallowEqual
 
@@ -140,6 +160,8 @@ their properties are strictly equal.
 
 -   `c1` **Composite** 
 -   `c2` **Composite** 
+
+Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ### updateIn
 
@@ -154,6 +176,8 @@ function.
 -   `path` **Path** 
 -   `updater` **function (prev: any): any** 
 -   `composite` **Composite** 
+
+Returns **Composite** 
 
 ## License
 

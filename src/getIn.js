@@ -19,7 +19,7 @@ const getInRecur = (index, path, composite) => {
 /**
  * Returns value located at the given path or undefined otherwise.
  */
-const getIn = (path: Path, composite: Composite) =>
+const getIn = (path: Path, composite: Composite): any =>
   path.length === 0 ? undefined : getInRecur(0, path, composite);
 
 export default curry(getIn);

@@ -77,7 +77,7 @@ const updateIn = (
   path: Path,
   updater: (prev: any) => any,
   composite: Composite
-) =>
+): Composite =>
   path.length === 0
     ? composite
     : getResult(
