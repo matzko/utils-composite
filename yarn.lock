@@ -37,9 +37,9 @@
     resolve-from "^3.0.0"
     semver "^5.3.0"
 
-"@jumpn/utils-array@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@jumpn/utils-array/-/utils-array-0.3.2.tgz#f6f8e23a4755721e7e3bfc1aeef063b5da265c8b"
+"@jumpn/utils-array@0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@jumpn/utils-array/-/utils-array-0.3.3.tgz#eedfbce2e06ab35e3d42fee76214191320b1825d"
   dependencies:
     babel-polyfill "6.26.0"
     babel-runtime "6.26.0"
