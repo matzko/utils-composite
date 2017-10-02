@@ -4,6 +4,29 @@
 >
 > **NOTE**: All the functions described in [API](#API) are curried
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- END doctoc -->
+
+- [Types](#types)
+- [API](#api)
+  - [get](#get)
+  - [getIn](#getin)
+  - [getKeys](#getkeys)
+  - [hasIn](#hasin)
+  - [hasKey](#haskey)
+  - [haveSameProps](#havesameprops)
+  - [remove](#remove)
+  - [removeIn](#removein)
+  - [set](#set)
+  - [setIn](#setin)
+  - [shallowCopy](#shallowcopy)
+  - [shallowEqual](#shallowequal)
+  - [updateIn](#updatein)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Types
 
 ```flowtype
