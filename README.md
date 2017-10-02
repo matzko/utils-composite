@@ -8,6 +8,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- END doctoc -->
 
+- [Installation](#installation)
+  - [Using npm](#using-npm)
+  - [Using yarn](#using-yarn)
 - [Types](#types)
 - [API](#api)
   - [get](#get)
@@ -26,6 +29,16 @@
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Installation
+
+### Using [npm](https://docs.npmjs.com/cli/npm)
+
+    $ npm install --save @jumpn/utils-composite
+
+### Using [yarn](https://yarnpkg.com)
+
+    $ yarn add @jumpn/utils-composite
 
 ## Types
 
