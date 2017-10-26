@@ -129,10 +129,10 @@ Maps values of the given composite using mapper
 
 **Parameters**
 
--   `mapper` **Mapper&lt;$Supertype&lt;C>>** 
+-   `mapper` **function (value: any, key: Key, composite: $Supertype&lt;C>): any** 
 -   `composite` **C** 
 
-Returns **Composite** 
+Returns **$Supertype&lt;C>** 
 
 ### remove
 

@@ -4,8 +4,6 @@ import {curry} from "flow-static-land/lib/Fun";
 
 import type {Composite, Key} from "./types";
 
-type Mapper<C: Composite> = (value: any, key: Key, composite: C) => any;
-
 const mapObject = (mapper, object) =>
   Object.entries(object).reduce(
     (result, [key, value]) => ({
@@ -19,9 +17,9 @@ const mapObject = (mapper, object) =>
  * Maps values of the given composite using mapper
  */
 const map = <C: Composite>(
-  mapper: Mapper<$Supertype<C>>,
+  mapper: (value: any, key: Key, composite: $Supertype<C>) => any,
   composite: C
-): Composite =>
+): $Supertype<C> =>
   Array.isArray(composite)
     ? composite.map(mapper)
     : mapObject(mapper, composite);
