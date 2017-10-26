@@ -19,6 +19,7 @@
   - [hasIn](#hasin)
   - [hasKey](#haskey)
   - [haveSameProps](#havesameprops)
+  - [map](#map)
   - [remove](#remove)
   - [removeIn](#removein)
   - [set](#set)
@@ -121,6 +122,17 @@ Returns true if both composites have the same props or false otherwise.
 -   `c2` **Composite** 
 
 Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
+### map
+
+Get property value of given key.
+
+**Parameters**
+
+-   `mapper` **Mapper&lt;$Supertype&lt;C>>** 
+-   `composite` **C** 
+
+Returns **Composite** 
 
 ### remove
 
