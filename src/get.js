@@ -2,7 +2,7 @@
 
 import {curry} from "flow-static-land/lib/Fun";
 
-import type {Key, Composite} from "./types";
+import type {Composite, Key} from "./types";
 
 /**
  * Get property value of given key.
