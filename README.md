@@ -125,7 +125,7 @@ Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### map
 
-Get property value of given key.
+Maps values of the given composite using mapper
 
 **Parameters**
 

@@ -16,7 +16,7 @@ const mapObject = (mapper, object) =>
   );
 
 /**
- * Get property value of given key.
+ * Maps values of the given composite using mapper
  */
 const map = <C: Composite>(
   mapper: Mapper<$Supertype<C>>,
