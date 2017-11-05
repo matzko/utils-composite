@@ -2,11 +2,11 @@
 # yarn lockfile v1
 
 
-"@commitlint/cli@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-4.2.1.tgz#5b1a99db20f54e3548d9f8ffbb722f8c7134a066"
+"@commitlint/cli@4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-4.2.2.tgz#f21669c28af9e5d49befc6bfd556b8130a782380"
   dependencies:
-    "@commitlint/core" "^4.2.1"
+    "@commitlint/core" "^4.2.2"
     babel-polyfill "^6.23.0"
     chalk "^2.0.1"
     get-stdin "^5.0.1"
@@ -17,9 +17,9 @@
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@commitlint/config-angular/-/config-angular-4.2.1.tgz#95b8b9975591047308afb109bd63a4298616eb5b"
 
-"@commitlint/core@^4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.2.1.tgz#c836f20005f75ceaf28594af7a9cca09dc780115"
+"@commitlint/core@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.2.2.tgz#24f37b5afdeca993173f1696724570015148c1f8"
   dependencies:
     "@marionebl/git-raw-commits" "^1.2.0"
     "@marionebl/sander" "^0.6.0"
@@ -36,19 +36,19 @@
     resolve-from "^3.0.0"
     semver "^5.3.0"
 
-"@commitlint/prompt-cli@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-4.2.1.tgz#c50e388fd0ccc6049d47cb273e1dc77d48b87369"
+"@commitlint/prompt-cli@4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-4.2.2.tgz#3a659a0fd06f39c3dc3619fd8f011829752db71f"
   dependencies:
-    "@commitlint/prompt" "^4.2.1"
+    "@commitlint/prompt" "^4.2.2"
     execa "^0.7.0"
     meow "^3.7.0"
 
-"@commitlint/prompt@^4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-4.2.1.tgz#2d6080a6c53be5b7d2c95e1f6fa404384124989b"
+"@commitlint/prompt@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-4.2.2.tgz#3594a0140722e95c31dd416a31280cb00bc86b23"
   dependencies:
-    "@commitlint/core" "^4.2.1"
+    "@commitlint/core" "^4.2.2"
     babel-runtime "^6.23.0"
     chalk "^1.1.1"
     lodash "^4.17.4"
@@ -106,9 +106,13 @@ acorn@^4.0.3:
   version "4.0.13"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
-acorn@^5.1.1, acorn@^5.1.2:
+acorn@^5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.1.2.tgz#911cb53e036807cf0fa778dc5d370fbd864246d7"
+
+acorn@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.2.1.tgz#317ac7821826c22c702d66189ab8359675f135d7"
 
 ajv-keywords@^1.0.0:
   version "1.5.1"
@@ -1963,9 +1967,9 @@ eslint-config-airbnb-base@12.1.0:
   dependencies:
     eslint-restricted-globals "^0.1.1"
 
-eslint-config-prettier@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-2.6.0.tgz#f21db0ebb438ad678fb98946097c4bb198befccc"
+eslint-config-prettier@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-2.7.0.tgz#7bbfef66ad783277836f4ea556e68b9bcc9da4d0"
   dependencies:
     get-stdin "^5.0.1"
 
@@ -1983,9 +1987,9 @@ eslint-module-utils@^2.1.1:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-flowtype-errors@3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype-errors/-/eslint-plugin-flowtype-errors-3.3.4.tgz#ae07261b8b8014ba4ba7b96f063a34705c1fe86d"
+eslint-plugin-flowtype-errors@3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype-errors/-/eslint-plugin-flowtype-errors-3.3.5.tgz#eeeba3231a33aea6f70c22c4c5a42c16dae0ed21"
   dependencies:
     babel-runtime "^6.26.0"
     slash "^1.0.0"
@@ -2029,9 +2033,9 @@ eslint-scope@^3.7.1:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint@4.9.0:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.9.0.tgz#76879d274068261b191fe0f2f56c74c2f4208e8b"
+eslint@4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.10.0.tgz#f25d0d7955c81968c2309aa5c9a229e045176bb7"
   dependencies:
     ajv "^5.2.0"
     babel-code-frame "^6.22.0"
@@ -2307,9 +2311,9 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flow-bin@0.57.3:
-  version "0.57.3"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.57.3.tgz#843fb80a821b6d0c5847f7bb3f42365ffe53b27b"
+flow-bin@0.58.0:
+  version "0.58.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.58.0.tgz#62d5a776589419e5656800a0e5230a5e585ca65e"
 
 flow-copy-source@1.2.1:
   version "1.2.1"
@@ -2325,9 +2329,13 @@ flow-static-land@0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/flow-static-land/-/flow-static-land-0.2.7.tgz#937f9dcb2780889a609155e5d1a55a993bc2ffb3"
 
-flow-typed@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/flow-typed/-/flow-typed-2.2.1.tgz#3de06241ebb0aa154ff681748ba74d19c7d9042f"
+flow-static-land@0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/flow-static-land/-/flow-static-land-0.2.8.tgz#49617e531396928bae6eb5d8ba32e7071637e5b9"
+
+flow-typed@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/flow-typed/-/flow-typed-2.2.3.tgz#e7a35915a0f4cfcf8068c1ce291b5c99e6b89efa"
   dependencies:
     babel-polyfill "^6.23.0"
     colors "^1.1.2"
@@ -2566,7 +2574,7 @@ glob@^5.0.3:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.0, glob@^7.1.1:
+glob@^7.0.0, glob@^7.0.5, glob@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -2577,7 +2585,7 @@ glob@^7.0.0, glob@^7.1.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.3, glob@^7.0.5, glob@^7.1.2, glob@~7.1.2:
+glob@^7.0.3, glob@^7.1.2, glob@~7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -3975,9 +3983,9 @@ normalize-uri@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/normalize-uri/-/normalize-uri-1.1.0.tgz#01fb440c7fd059b9d9be8645aac14341efd059dd"
 
-np@2.16.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/np/-/np-2.16.0.tgz#0cb8d0b98beb998b7ba8e8ce3ad12b07a46aee3c"
+np@2.16.1:
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/np/-/np-2.16.1.tgz#36cc62542c3bf4adf52fe6cda80c449722857bbd"
   dependencies:
     any-observable "^0.2.0"
     chalk "^1.1.3"
@@ -3989,7 +3997,7 @@ np@2.16.0:
     log-symbols "^1.0.2"
     meow "^3.7.0"
     read-pkg-up "^2.0.0"
-    rxjs "^5.0.0-beta.9"
+    rxjs "5.4.3"
     semver "^5.2.0"
     split "^1.0.0"
     stream-to-observable "^0.2.0"
@@ -4871,11 +4879,11 @@ rollup-plugin-babel@3.0.2:
   dependencies:
     rollup-pluginutils "^1.5.0"
 
-rollup-plugin-commonjs@8.2.4:
-  version "8.2.4"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-8.2.4.tgz#435b01fb591cb508dc740196cec8b60f10132e78"
+rollup-plugin-commonjs@8.2.6:
+  version "8.2.6"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-8.2.6.tgz#27e5b9069ff94005bb01e01bb46a1e4873784677"
   dependencies:
-    acorn "^5.1.2"
+    acorn "^5.2.1"
     estree-walker "^0.5.0"
     magic-string "^0.22.4"
     resolve "^1.4.0"
@@ -4940,7 +4948,7 @@ rx-lite@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-3.1.2.tgz#19ce502ca572665f3b647b10939f97fd1615f102"
 
-rxjs@^5.0.0-beta.11, rxjs@^5.0.0-beta.9:
+rxjs@5.4.3, rxjs@^5.0.0-beta.11:
   version "5.4.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.4.3.tgz#0758cddee6033d68e0fd53676f0f3596ce3d483f"
   dependencies:
@@ -5552,9 +5560,9 @@ typedarray@^0.0.6, typedarray@~0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-uglify-es@3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.1.5.tgz#63bae0fd4f9feeda417fee7c0ff685a673819683"
+uglify-es@3.1.7:
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.1.7.tgz#4994b6d7dee6ae0b05bd4fb5d18c9ae2023b6d58"
   dependencies:
     commander "~2.11.0"
     source-map "~0.6.1"
