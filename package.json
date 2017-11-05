@@ -14,7 +14,7 @@
     "build": "yarn run build:clean && yarn run build:index && yarn run build:src && yarn run build:flow && yarn run build:readme",
     "lint": "eslint --rule 'flowtype-errors/show-errors: error'",
     "lint:fix": "yarn run lint -- --fix",
-    "npm:publish": "yarn run np",
+    "npm:publish": "np",
     "precommit": "lint-staged",
     "commit": "commit",
     "commitmsg": "commitlint -e",
