@@ -89,7 +89,7 @@ Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 
 ### hasIn
 
-Returns true if value located at given path is strictly equal to the one
+Returns true if value located at given path is deeply equal to the one
 specified.
 
 **Parameters**

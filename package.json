@@ -50,6 +50,7 @@
     "@jumpn/utils-array": "0.3.4",
     "babel-polyfill": "6.26.0",
     "babel-runtime": "6.26.0",
+    "fast-deep-equal": "1.0.0",
     "flow-static-land": "0.2.8"
   },
   "devDependencies": {
