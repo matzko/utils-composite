@@ -16,18 +16,6 @@ const createReduceContext = composite => {
   return {origin, current: origin, previous: undefined};
 };
 
-const createSupporting = key => (typeof key === "number" ? [] : {});
-
-const copyOrCreate = (key, nextKey, current) =>
-  hasKey(key, current)
-    ? shallowCopy(get(key, current))
-    : createSupporting(nextKey);
-
-const getNext = (path, updater, index, current) =>
-  isLastIndex(path, index)
-    ? updater(get(path[index], current))
-    : copyOrCreate(path[index], path[index + 1], current);
-
 const set = (key, value, composite) => {
   // eslint-disable-next-line no-param-reassign
   composite[(key: any)] = value;
@@ -58,6 +46,18 @@ const update = (path, index, value, context) =>
   value === removeAction
     ? updateRemove(path, index, context)
     : updateSet(path, index, value, context);
+
+const createSupporting = key => (typeof key === "number" ? [] : {});
+
+const copyOrCreate = (key, nextKey, current) =>
+  hasKey(key, current)
+    ? shallowCopy(get(key, current))
+    : createSupporting(nextKey);
+
+const getNext = (path, updater, index, current) =>
+  isLastIndex(path, index)
+    ? updater(get(path[index], current))
+    : copyOrCreate(path[index], path[index + 1], current);
 
 const getReducer = (path, updater) => (context, key, index) =>
   update(path, index, getNext(path, updater, index, context.current), context);
