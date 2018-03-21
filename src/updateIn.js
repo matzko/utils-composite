@@ -13,7 +13,7 @@ import type {Composite, Path} from "./types";
 const createReduceContext = composite => {
   const origin = shallowCopy(composite);
 
-  return {origin, previous: undefined, current: origin};
+  return {origin, current: origin, previous: undefined};
 };
 
 const createSupporting = key => (typeof key === "number" ? [] : {});
@@ -37,7 +37,8 @@ const set = (key, value, composite) => {
 
 const updateSet = (path, index, value, context) => ({
   ...context,
-  current: set(path[index], value, context.current)
+  current: set(path[index], value, context.current),
+  previous: context.current
 });
 
 const updateRemove = (path, index, context) => {
