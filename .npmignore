@@ -1,4 +1,3 @@
-src/
 .*
 commitlint.config.js
 indexIgnore.sed
