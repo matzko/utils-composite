@@ -19,6 +19,7 @@
   - [hasIn](#hasin)
   - [hasKey](#haskey)
   - [haveSameProps](#havesameprops)
+  - [isEmpty](#isempty)
   - [map](#map)
   - [remove](#remove)
   - [removeIn](#removein)
@@ -120,6 +121,17 @@ Returns true if both composites have the same props or false otherwise.
 
 -   `c1` **Composite** 
 -   `c2` **Composite** 
+
+Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
+### isEmpty
+
+Returns true if composite has no own enumerable keys (is empty) or false
+otherwise
+
+**Parameters**
+
+-   `composite` **Composite** 
 
 Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
