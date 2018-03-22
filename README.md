@@ -27,6 +27,7 @@
   - [setIn](#setin)
   - [shallowCopy](#shallowcopy)
   - [shallowEqual](#shallowequal)
+  - [toUndefinedIfEmpty](#toundefinedifempty)
   - [updateIn](#updatein)
 - [License](#license)
 
@@ -222,6 +223,17 @@ their properties are strictly equal.
 -   `c2` **Composite** 
 
 Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
+### toUndefinedIfEmpty
+
+Returns given composite if it has any own enumerable keys (is not empty) or
+undefined otherwise
+
+**Parameters**
+
+-   `composite` **Composite** 
+
+Returns **Composite** 
 
 ### updateIn
 

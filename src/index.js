@@ -20,4 +20,5 @@ export {default as set} from "./set.js";
 export {default as setIn} from "./setIn.js";
 export {default as shallowCopy} from "./shallowCopy.js";
 export {default as shallowEqual} from "./shallowEqual.js";
+export {default as toUndefinedIfEmpty} from "./toUndefinedIfEmpty.js";
 export {default as updateIn} from "./updateIn.js";
