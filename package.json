@@ -20,7 +20,7 @@
     "commit": "commit",
     "commitmsg": "commitlint -e",
     "version": "yarn run build:index && yarn run build:readme && git add README.md src/index.js",
-    "prepublishOnly": "yarn run build:clean && yarn run build:src && yarn run build:flow"
+    "prepack": "yarn run build:clean && yarn run build:src && yarn run build:flow"
   },
   "lint-staged": {
     "*.js": [
