@@ -4,17 +4,31 @@ import {curry} from "flow-static-land/lib/Fun";
 import {isLastIndex} from "@jumpn/utils-array";
 
 import get from "./get";
-import hasKey from "./hasKey";
+import isComposite from "./is";
 
 import type {Composite, Path} from "./types";
 
-const getInRecur = (index, path, composite) => {
-  if (isLastIndex(path, index)) return get(path[index], composite);
+const getInIfNeeded = (index, path, value) =>
+  isLastIndex(path, index) ? value : getInRecur(index + 1, path, value);
 
-  return hasKey(path[index], composite)
-    ? getInRecur(index + 1, path, get(path[index], composite))
-    : undefined;
+const getNotCompositeErrorMessage = (index, path, maybeComposite) =>
+  `Expected to find a composite at [${path.join(", ")}][${index}], ` +
+  `but instead got: ${typeof maybeComposite}`;
+
+const ensureIsComposite = (index, path, maybeComposite) => {
+  if (isComposite(maybeComposite)) return maybeComposite;
+
+  throw new Error(getNotCompositeErrorMessage(index, path, maybeComposite));
 };
+
+const getInRecur = (index, path, maybeComposite) =>
+  maybeComposite === undefined
+    ? undefined
+    : getInIfNeeded(
+        index,
+        path,
+        get(path[index], ensureIsComposite(index, path, maybeComposite))
+      );
 
 /**
  * Returns value located at the given path or undefined otherwise.
