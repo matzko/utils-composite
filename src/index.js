@@ -1,6 +1,8 @@
 // @flow
 
+/* ::
 export * from "./types";
+*/
 
 // @create-index
 
