@@ -1,8 +1,6 @@
 // @flow
 
-/* ::
 export * from "./types";
-*/
 
 // @create-index
 
@@ -12,6 +10,7 @@ export {default as getKeys} from "./getKeys.js";
 export {default as hasIn} from "./hasIn.js";
 export {default as hasKey} from "./hasKey.js";
 export {default as haveSameProps} from "./haveSameProps.js";
+export {default as is} from "./is.js";
 export {default as isEmpty} from "./isEmpty.js";
 export {default as map} from "./map.js";
 export {default as remove} from "./remove.js";

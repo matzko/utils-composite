@@ -14,21 +14,39 @@
 - [Types](#types)
 - [API](#api)
   - [get](#get)
+    - [Parameters](#parameters)
   - [getIn](#getin)
+    - [Parameters](#parameters-1)
   - [getKeys](#getkeys)
+    - [Parameters](#parameters-2)
   - [hasIn](#hasin)
+    - [Parameters](#parameters-3)
   - [hasKey](#haskey)
+    - [Parameters](#parameters-4)
   - [haveSameProps](#havesameprops)
+    - [Parameters](#parameters-5)
+  - [is](#is)
+    - [Parameters](#parameters-6)
   - [isEmpty](#isempty)
+    - [Parameters](#parameters-7)
   - [map](#map)
+    - [Parameters](#parameters-8)
   - [remove](#remove)
+    - [Parameters](#parameters-9)
   - [removeIn](#removein)
+    - [Parameters](#parameters-10)
   - [set](#set)
+    - [Parameters](#parameters-11)
   - [setIn](#setin)
+    - [Parameters](#parameters-12)
   - [shallowCopy](#shallowcopy)
+    - [Parameters](#parameters-13)
   - [shallowEqual](#shallowequal)
+    - [Parameters](#parameters-14)
   - [toUndefinedIfEmpty](#toundefinedifempty)
+    - [Parameters](#parameters-15)
   - [updateIn](#updatein)
+    - [Parameters](#parameters-16)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -61,7 +79,7 @@ type Path = Array<Key>;
 
 Get property value of given key.
 
-**Parameters**
+#### Parameters
 
 -   `key` **Key** 
 -   `composite` **Composite** 
@@ -72,7 +90,7 @@ Returns **any**
 
 Returns value located at the given path or undefined otherwise.
 
-**Parameters**
+#### Parameters
 
 -   `path` **Path** 
 -   `composite` **Composite** 
@@ -83,64 +101,72 @@ Returns **any**
 
 Get own enumerable keys.
 
-**Parameters**
+#### Parameters
 
 -   `composite` **Composite** 
 
-Returns **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key>** 
+Returns **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;Key>** 
 
 ### hasIn
 
 Returns true if value located at given path is deeply equal to the one
 specified.
 
-**Parameters**
+#### Parameters
 
 -   `path` **Path** 
 -   `value` **any** 
 -   `composite` **Composite** 
 
-Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ### hasKey
 
 Returns true if key is included in composite's own enumerable ones,
 or false otherwise.
 
-**Parameters**
+#### Parameters
 
 -   `key` **Key** 
 -   `composite` **Composite** 
 
-Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ### haveSameProps
 
 Returns true if both composites have the same props or false otherwise.
 
-**Parameters**
+#### Parameters
 
 -   `c1` **Composite** 
 -   `c2` **Composite** 
 
-Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
+### is
+
+Returns true if parameter is a Composite or false otherwise
+
+#### Parameters
+
+-   `thing` **any** 
 
 ### isEmpty
 
 Returns true if composite has no own enumerable keys (is empty) or false
 otherwise
 
-**Parameters**
+#### Parameters
 
 -   `composite` **Composite** 
 
-Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ### map
 
 Maps values of the given composite using mapper
 
-**Parameters**
+#### Parameters
 
 -   `mapper` **function (value: any, key: Key, composite: $Supertype&lt;C>): any** 
 -   `composite` **C** 
@@ -152,7 +178,7 @@ Returns **$Supertype&lt;C>**
 Returns a new composite with the result of having removed the property with
 the given key.
 
-**Parameters**
+#### Parameters
 
 -   `key` **Key** 
 -   `composite` **Composite** 
@@ -167,7 +193,7 @@ located at the given path.
 (This does the same as calling **updateIn** with updater:
 `() => updateIn.remove`)
 
-**Parameters**
+#### Parameters
 
 -   `path` **Path** 
 -   `composite` **Composite** 
@@ -179,7 +205,7 @@ Returns **Composite**
 Returns a new composite with the result of having updated the property with
 the given key with the specified value.
 
-**Parameters**
+#### Parameters
 
 -   `key` **Key** 
 -   `value` **any** 
@@ -194,7 +220,7 @@ located at the given path with the specified value.
 
 (This does the same as calling **updateIn** with updater: `() => value`)
 
-**Parameters**
+#### Parameters
 
 -   `path` **Path** 
 -   `value` **any** 
@@ -206,7 +232,7 @@ Returns **Composite**
 
 Returns a new composite with the same own enumerable props of the one given.
 
-**Parameters**
+#### Parameters
 
 -   `composite` **C** 
 
@@ -217,19 +243,19 @@ Returns **C**
 Returns true if both composites are of the same type (Array or Object) and
 their properties are strictly equal.
 
-**Parameters**
+#### Parameters
 
 -   `c1` **Composite** 
 -   `c2` **Composite** 
 
-Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ### toUndefinedIfEmpty
 
 Returns given composite if it has any own enumerable keys (is not empty) or
 undefined otherwise
 
-**Parameters**
+#### Parameters
 
 -   `composite` **Composite** 
 
@@ -243,7 +269,7 @@ at the given path with the result of the call to updater function.
 Entry removal is supported by returning `updateIn.remove` symbol on updater
 function.
 
-**Parameters**
+#### Parameters
 
 -   `path` **Path** 
 -   `updater` **function (prev: any): any** 
