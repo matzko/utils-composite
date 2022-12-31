@@ -1,7 +1,7 @@
 // @flow
 
 import {curry} from "flow-static-land/lib/Fun";
-import {isLastIndex} from "@jumpn/utils-array";
+import isLastIndex from "../../../@jumpn/utils-array/src/isLastIndex";
 
 import get from "./get";
 import isComposite from "./is";
@@ -33,7 +33,9 @@ const getInRecur = (index, path, maybeComposite) =>
 /**
  * Returns value located at the given path or undefined otherwise.
  */
-const getIn = (path: Path, composite: Composite): any =>
+const getInF = (path: Path, composite: Composite): any =>
   path.length === 0 ? undefined : getInRecur(0, path, composite);
 
-export default curry(getIn);
+const getIn = curry(getInF)
+
+export default getIn;

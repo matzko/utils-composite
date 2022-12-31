@@ -7,6 +7,8 @@ import type {Composite, Key} from "./types";
 /**
  * Get property value of given key.
  */
-const get = (key: Key, composite: Composite): any => composite[(key: any)];
+function get(key: Key, composite: Composite): any {
+  return composite[key];
+}
 
 export default curry(get);

@@ -11,7 +11,10 @@ import type {Composite, Path} from "./types";
  * Returns true if value located at given path is deeply equal to the one
  * specified.
  */
-const hasIn = (path: Path, value: mixed, composite: Composite): boolean =>
-  isDeepEqual(getIn(path, composite), value);
+function hasInF(path: Path, value: any, composite: Composite): boolean {
+  return isDeepEqual(getIn(path, composite), value);
+}
 
-export default curry(hasIn);
+const hasIn = curry(hasInF)
+
+export default hasIn;
