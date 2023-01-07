@@ -1,5 +1,3 @@
-// @flow
-
 import isDeepEqual from "fast-deep-equal";
 import {curry} from "flow-static-land/lib/Fun";
 
