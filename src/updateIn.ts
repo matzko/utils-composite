@@ -1,5 +1,3 @@
-// @flow
-
 import {curry} from "flow-static-land/lib/Fun";
 import {isLastIndex} from "@jumpn/utils-array";
 
